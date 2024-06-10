@@ -209,10 +209,8 @@
 }
 
 .empty-cart-image {
-  background: url('../assets/images/empty_cart_image.png') 50% / cover no-repeat;
   margin-bottom: 1.5rem;
-  width: 44.1rem;
-  height: 28.4rem;
+  width: 100%;
 }
 
 .cart-container {
@@ -400,7 +398,6 @@
 
 
 
-
 /* Footer */
 
 .footer {
@@ -481,16 +478,12 @@
   box-sizing: border-box;
 }
 
-.submit-btn {
-  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
-  border-radius: 1.3rem;
-  border: 0.1rem solid #000000;
-  background: #FFFFFF;
-  display: flex;
-  padding: 0.8rem 0rem 0.8rem 0;
-  width: 6.2rem;
-  justify-content: center;
-  box-sizing: border-box;
+.email {
+  font-family: var(--text-regular-normal-font-family, 'Roboto');
+  font-weight: var(--text-regular-normal-font-weight, 400);
+  font-size: var(--text-regular-normal-font-size, 1rem);
+  line-height: var(--text-regular-normal-line-height, 1.5);
+  color: #666666;
 }
 
 .submit-txt {
@@ -500,12 +493,25 @@
   font-size: var(--text-regular-normal-font-size, 1rem);
   line-height: var(--text-regular-normal-line-height, 1.5);
   color: #000000;
+  border-radius: 1.3rem;
+  padding: 0.8rem 0rem;
+  width: 6.2rem;
+  background: #FFFFFF;
+  border-width: thin;
 }
 
 .sub-desc-container {
   display: flex;
   align-self: flex-start;
   box-sizing: border-box;
+}
+
+.sub-desc {
+  font-family: var(--text-regular-normal-font-family, 'Roboto');
+  font-weight: var(--text-regular-normal-font-weight, 400);
+  font-size: var(--text-regular-normal-font-size, 1rem);
+  line-height: var(--text-regular-normal-line-height, 1.5);
+  color: #000000
 }
 
 .credits-container {

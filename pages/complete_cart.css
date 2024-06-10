@@ -520,38 +520,6 @@
   height: 1.3rem;
 }
 
-.checkout-btn {
-  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
-  border-radius: 1.3rem;
-  border: 0.1rem solid #000000;
-  background: #C4B9AA;
-  display: flex;
-  flex-direction: row;
-  padding: 0.8rem 0;
-  width: 14.2rem;
-  height: fit-content;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-.checkout {
-  margin-right: 0.8rem;
-  overflow-wrap: break-word;
-  font-family: var(--text-regular-normal-font-family, 'Roboto');
-  font-weight: var(--text-regular-normal-font-weight, 400);
-  font-size: var(--text-regular-normal-font-size, 1rem);
-  line-height: var(--text-regular-normal-line-height, 1.5);
-  color: #FFFFFF;
-}
-
-.next-icon {
-  background: url('../assets/images/next_icon.png') 50% / cover no-repeat;
-  margin: 0.1rem 0;
-  width: 1.3rem;
-  height: 1.3rem;
-}
-
-
 
 
 
@@ -659,6 +627,7 @@
   padding: 0.8rem 0;
   width: 7.7rem;
   height: 3rem;
+  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -826,7 +795,6 @@
 
 
 
-
 /* Footer */
 
 .footer {
@@ -907,16 +875,12 @@
   box-sizing: border-box;
 }
 
-.submit-btn {
-  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
-  border-radius: 1.3rem;
-  border: 0.1rem solid #000000;
-  background: #FFFFFF;
-  display: flex;
-  padding: 0.8rem 0rem 0.8rem 0;
-  width: 6.2rem;
-  justify-content: center;
-  box-sizing: border-box;
+.email {
+  font-family: var(--text-regular-normal-font-family, 'Roboto');
+  font-weight: var(--text-regular-normal-font-weight, 400);
+  font-size: var(--text-regular-normal-font-size, 1rem);
+  line-height: var(--text-regular-normal-line-height, 1.5);
+  color: #666666;
 }
 
 .submit-txt {
@@ -926,12 +890,25 @@
   font-size: var(--text-regular-normal-font-size, 1rem);
   line-height: var(--text-regular-normal-line-height, 1.5);
   color: #000000;
+  border-radius: 1.3rem;
+  padding: 0.8rem 0rem;
+  width: 6.2rem;
+  background: #FFFFFF;
+  border-width: thin;
 }
 
 .sub-desc-container {
   display: flex;
   align-self: flex-start;
   box-sizing: border-box;
+}
+
+.sub-desc {
+  font-family: var(--text-regular-normal-font-family, 'Roboto');
+  font-weight: var(--text-regular-normal-font-weight, 400);
+  font-size: var(--text-regular-normal-font-size, 1rem);
+  line-height: var(--text-regular-normal-line-height, 1.5);
+  color: #000000
 }
 
 .credits-container {

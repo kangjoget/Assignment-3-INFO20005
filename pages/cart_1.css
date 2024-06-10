@@ -170,8 +170,9 @@
   background: #F2E9D8;
   display: flex;
   flex-direction: column;
-  padding-bottom: 2.1rem;
+  padding: 4% 4%;
   width: 100%;
+  align-items: center;
   box-sizing: border-box;
 }
 
@@ -194,9 +195,12 @@
 }
 
 .cart-container {
-  margin: 0 1.5rem;
   display: flex;
+  flex-direction: row;
   align-self: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 45rem;
   box-sizing: border-box;
 }
 
@@ -207,31 +211,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1.4rem;
+  padding-bottom: 0.5%;
+  margin: 0 1%;
+  width: 100%;
   box-sizing: border-box;
 }
 
-.butterfly-sil-mug {
-  background: url('../assets/images/butterfly_sil_mug.png') 50% / cover no-repeat;
-  margin-bottom: 1.5rem;
-  width: 30rem;
-  height: 20rem;
+.image-container {
+  width: 100%;
+  height: 75%;
 }
 
+.product-image {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 .cart-product-info {
-  margin: 0 1.4rem;
+  padding: 0 2%;
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .cart-product-content {
-  margin-bottom: 1.7rem;
+  padding-bottom: 2%;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  width: fit-content;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -269,7 +281,6 @@
 }
 
 .cart-product-price {
-  margin: 0 0rem;
   display: flex;
   align-self: flex-start;
   box-sizing: border-box;
@@ -300,10 +311,13 @@
   background: #C4B9AA;
   display: flex;
   padding: 0.5rem 0rem 0.5rem 0;
-  width: 39.8rem;
+  width: 100%;
   justify-content: center;
   box-sizing: border-box;
 }
+
+
+
 
 @media only screen and (max-width: 1385px) {
   /* For mobile phones: */
@@ -311,6 +325,16 @@
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Order Summary */
 
@@ -430,6 +454,11 @@
 }
 
 
+
+
+
+
+
 /* Order Buttons */
 
 .order-btn {
@@ -474,37 +503,160 @@
   height: 1.3rem;
 }
 
-.checkout-btn {
-  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
-  border-radius: 1.3rem;
-  border: 0.1rem solid #000000;
-  background: #C4B9AA;
+
+
+
+
+
+
+
+
+
+
+/* Shipping Details */
+
+.shipping-details {
+  background: #F2E9D8;
   display: flex;
-  flex-direction: row;
-  padding: 0.8rem 0;
-  width: 14.2rem;
-  height: fit-content;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 4rem;
+  width: 100%;
   box-sizing: border-box;
 }
 
-.checkout {
-  margin-right: 0.8rem;
+.shipping-details-title {
+  margin-bottom: 5rem;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.shipping-details-header {
+  overflow-wrap: break-word;
+  font-family: var(--heading-desktop-h-2-font-family, 'Roboto');
+  font-weight: var(--heading-desktop-h-2-font-weight, 700);
+  font-size: var(--heading-desktop-h-2-font-size, 3rem);
+  line-height: var(--heading-desktop-h-2-line-height, 1.2);
+  color: #000000;
+}
+
+.shipping-details-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-name-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.shipping-details-text {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  align-self: flex-start;
   overflow-wrap: break-word;
   font-family: var(--text-regular-normal-font-family, 'Roboto');
   font-weight: var(--text-regular-normal-font-weight, 400);
   font-size: var(--text-regular-normal-font-size, 1rem);
   line-height: var(--text-regular-normal-line-height, 1.5);
-  color: #FFFFFF;
+  color: #000000;
 }
 
-.next-icon {
-  background: url('../assets/images/next_icon.png') 50% / cover no-repeat;
-  margin: 0.1rem 0;
-  width: 1.3rem;
-  height: 1.3rem;
+.card-name-box {
+  border: 0.1rem solid #000000;
+  background: #FFFFFF;
+  width: 100%;
+  height: 3rem;
 }
 
+.card-details-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-number-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.card-number-box {
+  border: 0.1rem solid #000000;
+  background: #FFFFFF;
+  width: 100%;
+  height: 3rem;
+}
+
+.card-expiry-content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.card-expiry-box {
+  border: 0.1rem solid #000000;
+  background: #FFFFFF;
+  display: flex;
+  padding: 0.8rem 0;
+  width: 7.7rem;
+  height: 3rem;
+  box-sizing: border-box;
+}
+
+.cvc-content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.cvc-box {
+  border: 0.1rem solid #000000;
+  background: #FFFFFF;
+  width: 4.8rem;
+  height: 3rem;
+}
+
+.shipping-address-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.shipping-address-box {
+  border: 0.1rem solid #000000;
+  background: #FFFFFF;
+  width: 100%;
+  height: 3rem;
+}
+
+.checkbox-container {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  border: 0.1rem solid #000000;
+  background: #FFFFFF;
+  margin: 0.1rem 0.5rem 0.1rem 0;
+  width: 1.1rem;
+  height: 1.1rem;
+}
 
 
 
@@ -701,16 +853,12 @@
   box-sizing: border-box;
 }
 
-.submit-btn {
-  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
-  border-radius: 1.3rem;
-  border: 0.1rem solid #000000;
-  background: #FFFFFF;
-  display: flex;
-  padding: 0.8rem 0rem 0.8rem 0;
-  width: 6.2rem;
-  justify-content: center;
-  box-sizing: border-box;
+.email {
+  font-family: var(--text-regular-normal-font-family, 'Roboto');
+  font-weight: var(--text-regular-normal-font-weight, 400);
+  font-size: var(--text-regular-normal-font-size, 1rem);
+  line-height: var(--text-regular-normal-line-height, 1.5);
+  color: #666666;
 }
 
 .submit-txt {
@@ -720,12 +868,25 @@
   font-size: var(--text-regular-normal-font-size, 1rem);
   line-height: var(--text-regular-normal-line-height, 1.5);
   color: #000000;
+  border-radius: 1.3rem;
+  padding: 0.8rem 0rem;
+  width: 6.2rem;
+  background: #FFFFFF;
+  border-width: thin;
 }
 
 .sub-desc-container {
   display: flex;
   align-self: flex-start;
   box-sizing: border-box;
+}
+
+.sub-desc {
+  font-family: var(--text-regular-normal-font-family, 'Roboto');
+  font-weight: var(--text-regular-normal-font-weight, 400);
+  font-size: var(--text-regular-normal-font-size, 1rem);
+  line-height: var(--text-regular-normal-line-height, 1.5);
+  color: #000000
 }
 
 .credits-container {

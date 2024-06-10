@@ -568,6 +568,13 @@
   box-sizing: border-box;
 }
 
+.email {
+  font-family: var(--text-regular-normal-font-family, 'Roboto');
+  font-weight: var(--text-regular-normal-font-weight, 400);
+  font-size: var(--text-regular-normal-font-size, 1rem);
+  line-height: var(--text-regular-normal-line-height, 1.5);
+  color: #666666;
+}
 
 .submit-txt {
   overflow-wrap: break-word;
@@ -579,7 +586,7 @@
   border-radius: 1.3rem;
   padding: 0.8rem 0rem;
   width: 6.2rem;
-  background: white;
+  background: #FFFFFF;
   border-width: thin;
 }
 
@@ -587,6 +594,14 @@
   display: flex;
   align-self: flex-start;
   box-sizing: border-box;
+}
+
+.sub-desc {
+  font-family: var(--text-regular-normal-font-family, 'Roboto');
+  font-weight: var(--text-regular-normal-font-weight, 400);
+  font-size: var(--text-regular-normal-font-size, 1rem);
+  line-height: var(--text-regular-normal-line-height, 1.5);
+  color: #000000
 }
 
 .credits-container {
