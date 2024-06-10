@@ -291,7 +291,6 @@
 
 /* Newsletter */
 
-
 .newsletter {
   background: #F2E9D8;
   display: flex;
@@ -347,7 +346,7 @@
 .newsletteremail-container {
   border: 0.1rem solid #000000;
   background: #FFFFFF;
-  margin-right: 1rem;
+  margin: 0 1rem 1rem 0;
   padding: 0.8rem;
   width: 21.3rem;
   box-sizing: border-box;
@@ -368,9 +367,9 @@
   border: 0.1rem solid #000000;
   background: #C4B9AA;
   display: flex;
-  padding: 0.8rem 0rem 0.8rem 0;
-  width: 9.8rem;
-  justify-content: center;
+  padding: 0.8rem;
+  height: fit-content;
+  margin-bottom: inherit;
   box-sizing: border-box;
 }
 
@@ -392,6 +391,14 @@
   line-height: var(--text-tiny-normal-line-height, 1.5);
   color: #000000;
 }
+
+
+
+
+
+
+
+
 
 
 /* Footer */
