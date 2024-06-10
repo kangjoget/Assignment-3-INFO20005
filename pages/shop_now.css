@@ -128,6 +128,12 @@
   height: 1.5rem;
 }
 
+.dropdown-icon {
+  background: url('../assets/images/drop_down_icon.png') 50% / cover no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .user-data {
   display: flex;
   flex-direction: row;
@@ -210,16 +216,17 @@
   flex-direction: column;
   align-items: center;
   padding: 18.4rem 0;
-  width: 90rem;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .feature-content {
   margin-bottom: 2.5rem;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -259,6 +266,7 @@
   padding: 0.8rem 0rem 0.8rem 0;
   width: 8.4rem;
   height: fit-content;
+  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -272,34 +280,26 @@
 }
 
 
-/* Shop Display */
 
-.shop-now-product {
+
+/* Mug Product Display */
+
+.home-product {
   background: #F2E9D8;
-  margin-bottom: 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.5rem 4rem 7rem 4rem;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-.shop-now-container {
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
+  padding: 5%;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .product-header {
-  margin: 0 0.8rem 5rem 0.8rem;
+  margin-bottom: 0.7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -322,8 +322,8 @@
   box-sizing: border-box;
 }
 
- .product-category {
-  margin-bottom: 1.5rem;
+.product-category {
+  margin-bottom: 1rem;
   display: inline-block;
   overflow-wrap: break-word;
   font-family: var(--heading-desktop-h-2-font-family, 'Roboto');
@@ -332,59 +332,74 @@
   line-height: var(--heading-desktop-h-2-line-height, 1.2);
   color: #000000;
 }
- .product-description {
-  text-align: center;
+
+.product-description {
   overflow-wrap: break-word;
   font-family: var(--text-medium-normal-font-family, 'Roboto');
   font-weight: var(--text-medium-normal-font-weight, 400);
   font-size: var(--text-medium-normal-font-size, 1.1rem);
   line-height: var(--text-medium-normal-line-height, 1.5);
+  text-align: center;
   color: #000000;
 }
 
-.shop-product-display {
+.product-display {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  padding: 5% 0;
 }
 
 
-.shop-product-row {
+.product-row {
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
+  align-self: flex-start;
+  padding-bottom: 1rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-.shop-product-card {
+.product-card {
+  background: #F2E9D8;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 19rem;
+  padding-bottom: 0.5%;
+  margin: 0 1%;
+  width: 100%;
   box-sizing: border-box;
 }
 
-.shop-product-content {
-  margin-bottom: 1rem;
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
+}
+
+
+.image-container {
+  width: 100%;
+  height: 75%;
+}
+
+.product-image {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
+  padding: 3%;
+  width: 100%;
   box-sizing: border-box;
 }
 
- .shop-product-header {
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
 
 .product-name {
   overflow-wrap: break-word;
@@ -393,8 +408,9 @@
   font-size: var(--text-medium-semi-bold-font-size, 1.1rem);
   line-height: var(--text-medium-semi-bold-line-height, 1.5);
   color: #000000;
+  text-align: center;
 }
- .product-variant {
+.product-variant {
   overflow-wrap: break-word;
   font-family: var(--text-small-normal-font-family, 'Roboto');
   font-weight: var(--text-small-normal-font-weight, 400);
@@ -403,13 +419,14 @@
   color: #000000;
 }
 
- .price {
+.price {
   overflow-wrap: break-word;
   font-family: var(--text-large-semi-bold-font-family, 'Roboto');
   font-weight: var(--text-large-semi-bold-font-weight, 600);
   font-size: var(--text-large-semi-bold-font-size, 1.3rem);
   line-height: var(--text-large-semi-bold-line-height, 1.5);
   color: #000000;
+  margin-bottom: 0.5rem;
 }
 
 .cart-btn {
@@ -418,12 +435,17 @@
   border: 0.1rem solid #000000;
   background: #FFFFFF;
   display: flex;
-  padding: 0.5rem 0rem 0.5rem 0;
-  width: 19rem;
+  padding: 0.5rem 0;
+  width: 100%;
   box-sizing: border-box;
+  justify-content: center;
 }
 
- .add-to-cart {
+.cart-btn:hover {
+  transform: scale(1.05);
+  background: #C4B9AA;
+}
+.add-to-cart {
   overflow-wrap: break-word;
   font-family: var(--text-regular-normal-font-family, 'Roboto');
   font-weight: var(--text-regular-normal-font-weight, 400);
@@ -432,13 +454,6 @@
   color: #000000;
 }
 
-.product-image {
-  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
-  border: 0.1rem solid #000000;
-  margin-bottom: 1rem;
-  width: 19rem;
-  height: 22.8rem;
-}
 
 .view-all {
   overflow-wrap: break-word;
@@ -456,14 +471,14 @@
   display: flex;
   padding: 0.8rem 0.1rem 0.8rem 0;
   width: 6.5rem;
+  justify-content: center;
   box-sizing: border-box;
 }
 
-
-
-
-
-
+.view-all-btn:hover {
+  transform: scale(1.05);
+  background: #C4B9AA;
+}
 
 
 
@@ -487,7 +502,7 @@
   display: flex;
   flex-direction: column;
   padding: 7rem 8.5rem 10.5rem 4rem;
-  width: auto;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -534,7 +549,6 @@
 }
 
 .star-rating {
-  background: url('../assets/images/star_rating.png');
   width: 6.7rem;
   height: 1.6rem;
 }
@@ -645,7 +659,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 82rem;
+  width: 100%;
   box-sizing: border-box;
 }
  .testimonial-layout {
@@ -658,6 +672,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* FAQ */
 
 .faq {
@@ -665,17 +690,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7rem 0;
-  width: 90rem;
+  padding: 15%;
+  width: 100%;
   box-sizing: border-box;
 }
 
-.faqtitle {
+.faqtitletop {
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.faqtitle {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -705,7 +739,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 48rem;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -714,29 +748,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 48rem;
+  width: 100%;
   box-sizing: border-box;
-}
-
-.dropdown-icon {
-  background: url('../assets/images/drop_down_icon.png') 50% / cover no-repeat;
-  margin: 0.2rem 0;
-  width: 1.3rem;
-  height: 1.3rem;
 }
 
 .faqdivider {
   border: 0.1rem solid #000000;
   background: #000000;
   margin-bottom: 1.3rem;
-  width: 48rem;
+  width: 100%;
   height: 0.1rem;
 }
 
 .faqquestion {
   margin: 0.1rem 0.8rem 0.1rem 0;
   display: inline-block;
-  width: 45.3rem;
+  width: 100%;
   overflow-wrap: break-word;
   font-family: var(--text-medium-bold-font-family, 'Roboto');
   font-weight: var(--text-medium-bold-font-weight, 700);
@@ -752,6 +779,39 @@
   width: fit-content;
   box-sizing: border-box;
 }
+
+.contact-title {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.contact-heading {
+  margin-bottom: 1rem;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--heading-desktop-h-4-font-family, 'Roboto');
+  font-weight: var(--heading-desktop-h-4-font-weight, 700);
+  font-size: var(--heading-desktop-h-4-font-size, 2rem);
+  line-height: var(--heading-desktop-h-4-line-height, 1.3);
+  text-align: center;
+  color: #000000;
+}
+
+.contact-description {
+  overflow-wrap: break-word;
+  font-family: var(--text-medium-normal-font-family, 'Roboto');
+  font-weight: var(--text-medium-normal-font-weight, 400);
+  font-size: var(--text-medium-normal-font-size, 1.1rem);
+  line-height: var(--text-medium-normal-line-height, 1.5);
+  text-align: center;
+  color: #000000;
+}
+
+
 
 .contact-btn-txt {
   overflow-wrap: break-word;
@@ -769,8 +829,10 @@
   display: flex;
   padding: 0.8rem 0rem 0.8rem 0;
   width: 6.5rem;
+  justify-content: center;
   box-sizing: border-box;
 }
+
 
 
 
